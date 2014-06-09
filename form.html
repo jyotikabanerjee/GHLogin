@@ -1,35 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head lang="en">
     <meta charset="UTF-8">
     <title>Login Page</title>
     <style>
+        .logo{
+            display: inline-block;
+            float: left;
+            margin-left: 2em;
+        }
+
+        .logo > img{
+            width: 10em;
+        }
+        header{
+            height: 7em;
+            background-color: whitesmoke;
+        }
+        article{
+            height: 25em;
+            background-color: #2a2a2a;
+        }
+        footer{
+            height: 7em;
+            background-color: whitesmoke;
+            font-family: Arial;
+            text-align: center;
+            font-size: 16pt;
+        }
+
+        .left_content{
+            margin: 0.5em 1em;
+            margin-left: 5em;
+            width: 50em;
+            font-family: Arial;
+            text-align: left;
+            float: left;
+            color: white;
+        }
         form
         {
             /*width: 10em;*/
+            margin-top: 3em;
             float: right;
         }
-        form > div {
+        form > div >input {
             margin: 0.5em 1em;
+            width: 25em;
+            border-size: 4em;
+        }
+        form > button {
+            height: 3em;
+            width: 25em;
+            margin-left:1em;
+            margin-right: 1em;
+            font: Arial;
+            text-align: center;
+            background-color: green;
+            color: white;
+
+            border-radius: 1em;
+            border-size: 4em;
+
+        }
+
+        div.freetext{
+            width: 25em;
+            margin-left:1em;
+            margin-right: 1em;
+            font-family: Arial;
+            font-size: 10pt;
+            color: gray;
         }
     </style>
 
 </head>
 <body>
-<div>
+<header>
+    <div class = "logo">
+        <img src="http://media.creativebloq.futurecdn.net/sites/creativebloq.com/files/images/2013/04/newgit.jpg" alt="logo"/>
+
+</header>
+<article>
+<div class="left_content">
+<h1>Build software <br> better, together.</h1>
+Powerful collaboration, code review, and code management for <br> open source and private projects. Need private repositories?
+<br>  <a href="https://github.com/pricing"> Upgraded plans start at $7/mo.</a>
+</div>
 <form class="form" action="submit">
     <div>
-    <input type="text" placeholder="emailss"/>
+    <input type="text" placeholder="Email"/>
     </div>
     <div>
-    <label>Username</label>
-    <input type="text"/>
+    <input type="text" placeholder="Username"/>
     </div>
     <div>
-    <labe>Password</labe>
-    <input type="password"/>
+    <input type="password" placeholder="Password"/>
+    </div>
+    <div class="freetext">
+        Use at least one lowercase letter,
+        one numeral, and seven characters.
+    </div><br>
+    <button>Sign-Up for GitHub</button>
+    <div class="freetext">
+     <br>   By clicking "Sign up for GitHub",
+        you agree to our <a href="https://help.github.com/articles/github-terms-of-service"> terms of service </a>
+        and <a href="https://help.github.com/articles/github-privacy-policy"> privacy policy</a>.
+        We will send you account related emails occasionally.
     </div>
 </form>
-</div>
+
+</article>
+<footer>
+ <h2>Why you'll love GitHub</h2>
+ <h4> <a href="https://github.com/features">Powerful features</a> to make software development more collaborative.</h2>
+</footer>
 </body>
 </html>
